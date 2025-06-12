@@ -1,0 +1,24 @@
+.loginButton {
+    background-color: maroon;
+    color: white;
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom: 4px solid black;
+}
+
+
+.loginButton:hover {
+    background-color: darkred;
+    color: white;
+    border-color: black;
+}
+
+.loginButton:active {
+    background-color: darkred !important;
+    color: white;
+    border-color: black !important;
+}
+
+.controlForm {
+    border: solid 2px black;
+}
