@@ -15,6 +15,20 @@ router.get("/", authMiddleware, async (req, res) => {
     }
 });
 
+// Route per ottenere un evento specifico
+router.get("/:id", authMiddleware, async (req, res) => {
+    const id = req.params.id;
+    try {
+        const event = await events.findById(id);
+        if (!event) {
+            return res.status(404).json({ message: "Evento non trovato" });
+        }
+        res.status(200).json(event);
+    } catch (error) {
+        res.status(500).json({ message: "Errore nel recupero dell'evento" });
+    }
+});
+
 // Route per creare un nuovo evento
 router.post("/", authMiddleware, async (req, res) => {
      const match = req.body;

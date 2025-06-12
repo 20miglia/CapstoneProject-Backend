@@ -57,7 +57,7 @@ router.post('/login', async (req, res) => {
             return res.status(401).json({ error: 'Invalid password' });
         }
         const token = jsonwebtoken.sign({ id: player._id, fullname: player.fullname, username: player.username, email: player.email }, jwtSecretKey, { expiresIn: '3h' });
-        res.status(200).json(token);
+        res.status(200).json({token});
     } catch (error) {
         res.status(500).json({ error: 'Error logging in' });
     }
