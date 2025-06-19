@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Form, Button} from 'react-bootstrap';
 import api from '../../services/api.jsx';
+import './StyleAddMatch.css'
+
+
 
 function AddMatch() {
     const [alertMsg, setAlertMsg] = useState('');
@@ -99,32 +102,32 @@ function AddMatch() {
             <Form onSubmit={formSubmitMatchHandler}>
 
                 <Form.Group>
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="name" name="name" value={match.name} onChange={formMatchHandler} required/>
+                    <Form.Label className='ff2'>Name</Form.Label>
+                    <Form.Control className='ff1' type="name" name="name" value={match.name} onChange={formMatchHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Date</Form.Label>
-                    <Form.Control type="text" name="date" value={match.date} onChange={formMatchHandler} required/>
+                    <Form.Label className='ff2'>Date</Form.Label>
+                    <Form.Control className='ff1' type="text" name="date" value={match.date} onChange={formMatchHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Location</Form.Label>
-                    <Form.Control type="location" name="location" value={match.location} onChange={formMatchHandler} required/>
+                    <Form.Label className='ff2'>Location</Form.Label>
+                    <Form.Control className='ff1' type="location" name="location" value={match.location} onChange={formMatchHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Image</Form.Label>
-                    <Form.Control type="file" accept="image/*" onChange={imageHandler} />
+                    <Form.Label className='ff2'>Image</Form.Label>
+                    <Form.Control className='ff1' type="file" accept="image/*" onChange={imageHandler} />
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Description</Form.Label>
-                    <Form.Control type="description" name="description" value={match.description} onChange={formMatchHandler} required/>
+                    <Form.Label className='ff2'>Description</Form.Label>
+                    <Form.Control className='ff1' type="description" name="description" value={match.description} onChange={formMatchHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Button variant="primary" type='submit' className='w-100 mt-3'>Add-Match</Button>
+                    <Button type='submit' className='bt3 w-100 mt-3'>Add-Match</Button>
                 </Form.Group>
 
             </Form>

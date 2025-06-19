@@ -1,40 +1,49 @@
-.profileContainer{
-    border: solid 4px maroon;
-    border-radius: 20px; 
-    max-width: 600px;
-    height: 280px;
+.set {
+    background-color: transparent;
+    opacity: 0.8;
+  
+    
 }
 
-.btUpdate {
+.accord {
+    border: solid 4px maroon;
+    border-radius: 10px;
+}
+
+
+.piece {
+   border: solid 4px white;
+   border-radius: 5px;
+}
+
+
+.matchButton {
+    border-radius: 50px;
     background-color: maroon;
     color: white;
     border-color: black;
     border-bottom-style: solid;
     border-bottom: 4px solid black;
-    text-decoration: underline;
-    border-radius: 50px;
 }
 
 
-.btUpdate:hover {
+.matchButton:hover {
     background-color: darkred;
     color: white;
     border-color: black;
 }
 
-.btUpdate:active {
+.matchButton:active {
     background-color: darkred !important;
     color: white;
     border-color: black !important;
 }
 
 
-.pot {
-    background-color: white;
-    border-radius: 20px;
-    padding-left: 7px;
-    border: solid 1px black;
-
+.sw {
+    text-decoration: underline;
 }
 
-
+.sx {
+    text-decoration: underline maroon;
+}

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import api from '../services/api.jsx';      
 import { useNavigate } from 'react-router-dom';
+import './StyleUpdateProfile.css'
 
 
 
@@ -78,8 +79,8 @@ function UpdateProfile() {
             <h2>Modifica Profilo</h2>
             <Form onSubmit={formUpdateSubmitHandler}>
                 <Form.Group className="mb-3">
-                    <Form.Label>Fullname</Form.Label>
-                    <Form.Control
+                    <Form.Label className='ff7'>Fullname</Form.Label>
+                    <Form.Control className='ff6'
                         type="text"
                         name="fullname"
                         value={player.fullname}
@@ -88,8 +89,8 @@ function UpdateProfile() {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Username</Form.Label>
-                    <Form.Control
+                    <Form.Label className='ff7'>Username</Form.Label>
+                    <Form.Control className='ff6'
                         type="text"
                         name="username"
                         value={player.username}
@@ -98,8 +99,8 @@ function UpdateProfile() {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control
+                    <Form.Label className='ff7'>Email</Form.Label>
+                    <Form.Control className='ff6'
                         type="email"
                         name="email"
                         value={player.email}
@@ -108,8 +109,8 @@ function UpdateProfile() {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Password (opzionale)</Form.Label>
-                    <Form.Control
+                    <Form.Label className='ff7'>Password (opzionale)</Form.Label>
+                    <Form.Control className='ff6'
                         type="password"
                         name="password"
                         value={player.password}
@@ -118,8 +119,8 @@ function UpdateProfile() {
                     />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
-                    Salva modifiche
+                <Button className='bt5 w-100' type="submit">
+                    Save Changes
                 </Button>
             </Form>
         </Container>

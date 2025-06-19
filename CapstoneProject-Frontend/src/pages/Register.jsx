@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Form, Button, Container } from 'react-bootstrap';
+import { Form, Button, Container, Col, Row } from 'react-bootstrap';
 import api from '../services/api.jsx';
 import './StyleRegister.css';
 
@@ -71,27 +71,28 @@ function Register() {
 
 
     return (
-        <Container className='registerContainer w-50 mt-5'>
+        <Container className='registerContainer mt-5' style={{ maxWidth: '400px' }} >
+        
 
             <Form onSubmit={formSubmitHandler}>
 
                 <Form.Group>
-                    <Form.Label>Fullname</Form.Label>
+                    <Form.Label className='word'>Fullname</Form.Label>
                     <Form.Control className='controlForm' type="fullname" name="fullname" value={player.fullname} onChange={formHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Username</Form.Label>
+                    <Form.Label className='word'>Username</Form.Label>
                     <Form.Control className='controlForm' type="username" name="username" value={player.username} onChange={formHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label className='word'>Email</Form.Label>
                     <Form.Control className='controlForm' type="email" name="email" value={player.email} onChange={formHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label className='word'>Password</Form.Label>
                     <Form.Control className='controlForm' type="password" name="password" value={player.password} onChange={formHandler} required/>
                 </Form.Group>
 
@@ -100,7 +101,8 @@ function Register() {
                 </Form.Group>
 
             </Form>
-
+           
+        
         </Container>
     )
 }

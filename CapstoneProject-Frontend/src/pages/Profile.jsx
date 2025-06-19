@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card, ListGroup } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import api from '../services/api'
 import './StyleProfile.css'
@@ -32,28 +32,29 @@ function Profile() {
 
     return (
         
-        <Container className='profileContainer mt-5 mb-5 w-25'>
-            <Row >
-                <Col className='colProfile p-3 mb-5' xs={12}>
-                <div>
-                    <div>
-                        <h3 className='profileDiv'>Fullname: {profileData.fullname}</h3>
+        <Container className='profileContainer mt-5 mb-5 d-flex'> 
+            <Row className="w-100" style={{ maxWidth: '600px' }}>
+                <Col xs={12} className='colProfile p-3 mb-5'>
+                  
+                   <div>
+                    <div className='ser'>
+                        <h4 className='pot'>Fullname: {profileData.fullname} </h4>
                     </div>
 
-                    <div>
-                        <h3>Username: {profileData.username}</h3>
+                    <div className='ser'>
+                        <h4 className='pot'>Username: {profileData.username}</h4>
                     </div>
 
-                    <div>
-                        <h3>Email: {profileData.email}</h3>
+                    <div className='ser'>
+                        <h4 className='pot'>Email: {profileData.email}</h4>
                     </div>
 
-                    <div>
-                        <h3>Password: ********</h3>
+                    <div className='ser'>
+                        <h4 className='pot'>Password: ********</h4>
                     </div>
-                    <Button as={Link} to="/updateprofile">Update Profile</Button>
-                </div>
-                
+                    <Button className='btUpdate w-100 mt-3' as={Link} to="/updateprofile">Update Profile</Button>
+                   </div>
+                  
                 </Col>
             </Row>
         </Container >

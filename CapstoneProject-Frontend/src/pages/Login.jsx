@@ -41,17 +41,17 @@ function Login() {
 
 
     return (
-        <Container className="loginContainer w-50 mt-5 p-4">
+        <Container className="loginContainer mt-5" style={{ maxWidth: '400px' }}>
 
             <Form onSubmit={formSubmit} className='mt-3 '>
 
                 <Form.Group>
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label className='word'>Email</Form.Label>
                     <Form.Control className='controlForm' type="email" name="email" value={playerLogin.email} onChange={formHandler} required/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label className='word'>Password</Form.Label>
                     <Form.Control className='controlForm' type="password" name="password" value={playerLogin.password} onChange={formHandler} required/>
                 </Form.Group>
 

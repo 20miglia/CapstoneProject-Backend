@@ -5,6 +5,7 @@ import api from '../../services/api.jsx';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom'; // Import useParams to get matchId from URL
+import './StyleUpdateMatch.css'
 
 
 function UpdateMatch() {
@@ -102,27 +103,27 @@ function UpdateMatch() {
             <Form onSubmit={formSubmitUpdateMatchHandler} className='w-50 mx-auto mt-5'>
 
                 <Form.Group>
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" name="name" value={match.name} onChange={formUpdateMatchHandler}/>
+                    <Form.Label className='ff4'>Name</Form.Label>
+                    <Form.Control className='ff3' type="text" name="name" value={match.name} onChange={formUpdateMatchHandler}/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Date</Form.Label>
-                    <Form.Control type="text" name="date" value={match.date} onChange={formUpdateMatchHandler}/>
+                    <Form.Label className='ff4'>Date</Form.Label>
+                    <Form.Control className='ff3' type="text" name="date" value={match.date} onChange={formUpdateMatchHandler}/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Location</Form.Label>
-                    <Form.Control type="text" name="location" value={match.location} onChange={formUpdateMatchHandler}/>
+                    <Form.Label className='ff4'>Location</Form.Label>
+                    <Form.Control className='ff3' type="text" name="location" value={match.location} onChange={formUpdateMatchHandler}/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Description</Form.Label>
-                    <Form.Control type="text" name="description" value={match.description} onChange={formUpdateMatchHandler}/>
+                    <Form.Label className='ff4'>Description</Form.Label>
+                    <Form.Control className='ff3' type="text" name="description" value={match.description} onChange={formUpdateMatchHandler}/>
                 </Form.Group>
 
                 <Form.Group>
-                    <Button variant="primary" type='submit' className='w-100 mt-3'>Update-Match</Button>
+                    <Button type='submit' className='bt4 w-100 mt-3'>Update-Match</Button>
                 </Form.Group>
 
             </Form>

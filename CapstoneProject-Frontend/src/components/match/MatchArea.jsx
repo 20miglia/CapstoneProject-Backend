@@ -4,6 +4,7 @@ import AddMatch from './AddMatch';
 import api from '../../services/api.jsx'
 import { useState } from 'react'
 import MatchList from './MatchList.jsx';
+import './StyleMatchArea.css'
 
 
 function MatchArea() {
@@ -17,9 +18,8 @@ function MatchArea() {
         <Container className="mt-5 mb-5">
           <Row className="justify-content-center">
             <Col md={8}>
-            <h1 className="text-center mb-4">Match Area</h1>
-            <p className="text-center">Qui puoi trovare tutte le partite e gli eventi in programma nella tua zona. Unisciti a noi per giocare e divertirti!</p>
-            <p className="text-center">Restate sintonizzati per scoprire le prossime partite ed eventi!</p>
+            <h1 className="text-center mb-4">Match nelle Tue Vicinanze!</h1>
+            <h3 className="text-center">"Qui puoi trovare tutte le partite e gli eventi in programma nella tua zona. <br /> Inoltre potrai creare anche il tuo evento personale. <br /> Unisciti alla community per giocare e divertiti!"</h3>
             <MatchList/>
             </Col>
           </Row>

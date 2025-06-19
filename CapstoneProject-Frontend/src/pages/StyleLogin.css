@@ -4,6 +4,8 @@
     border-color: black;
     border-bottom-style: solid;
     border-bottom: 4px solid black;
+    border-radius: 50px;
+    text-decoration: underline;
 }
 
 
@@ -21,4 +23,16 @@
 
 .controlForm {
     border: solid 2px black;
+    border-radius: 20px;
+}
+
+.word {
+    text-decoration: underline;
+}
+
+.loginContainer {
+    border: solid 4px maroon;
+    border-radius: 20px;
+    padding-bottom: 14px;
+    padding-top: 2px;
 }

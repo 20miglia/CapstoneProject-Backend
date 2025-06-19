@@ -1,9 +1,9 @@
 import React from 'react'
-import { Button, ListGroup, CardImg, Card } from 'react-bootstrap'
+import { Button, ListGroup, CardImg, Card, Col, Row } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import api from '../../services/api.jsx'
 import { Link } from 'react-router-dom'
-import './StyleMatchList.css' // Assuming you have a CSS file for styling
+import './StyleMatchList.css' 
 
 
 function MatchList() {
@@ -45,24 +45,29 @@ function MatchList() {
 
 
             {listMatch.map((u,i) => (
-                <ListGroup.Item key={i} className="d-flex justify-content-between align-items-center">
-                    
-                    <div>
-                        <h4>{u.name}</h4>
-                        <h6>{u.description}</h6>
-                        <h5>{u.location}</h5>
-                        <h5 className="badge bg-success rounded-pill">{u.date}</h5>
-                    </div>
-                  <Card >
+                <ListGroup.Item key={i} >
+                    <Row className="g-3 align-items-center">
+                    <Col xs={12} md={5}>
+                        <h5 className='mod'> {u.name}</h5>
+                        <h6>- {u.description}</h6>
+                        <h5>- {u.location}</h5>
+                        <h5>- {u.date}</h5>
+                    </Col>
+                <Col xs={12} md={4}>
+                  <Card className="h-100 ">
                     <Card.Img className='styleCard' variant="top" src={u.matchlocation}/>
                   </Card>
-                  <Button variant="warning" onClick={() => deleteMatch(u._id)} className='mx-2'>Elimina Evento</Button>
-                  <Button as={Link} to={`/updatematch/${u._id}`}  variant="success">Modifica Evento</Button>
-                  
+                </Col>
+
+                <Col xs={12} md={3} className="d-flex flex-column gap-2">
+                  <Button className='bt2'  onClick={() => deleteMatch(u._id)}>Elimina Evento</Button>
+                  <Button className='bt2' as={Link} to={`/updatematch/${u._id}`}  >Modifica Evento</Button>
+                </Col>
+                  </Row>
                 </ListGroup.Item>
             ))}
             
-                <Button as={Link} to='/addmatch' variant="dark" className='w-100 mt-3'>Aggiungi il Tuo Evento Partita!</Button>
+                <Button as={Link} to='/addmatch' className='bt1 w-100 mt-3'>Aggiungi il Tuo Evento Partita!</Button>
                 
         </ListGroup>
 

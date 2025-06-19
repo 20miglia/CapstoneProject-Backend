@@ -1,0 +1,49 @@
+.bt2 {
+    background-color: maroon;
+    color: white;
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom: 4px solid black;
+    text-decoration: underline;
+    border-radius: 50px;
+}
+
+
+.bt2:hover {
+    background-color: darkred;
+    color: white;
+    border-color: black;
+}
+
+.bt2:active {
+    background-color: darkred !important;
+    color: white;
+    border-color: black !important;
+}
+
+.mod {
+    text-decoration: underline maroon 2px;
+}
+
+.bt1 {
+    background-color: maroon;
+    color: white;
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom: 4px solid black;
+    text-decoration: underline;
+    border-radius: 50px;
+}
+
+
+.bt1:hover {
+    background-color: darkred;
+    color: white;
+    border-color: black;
+}
+
+.bt1:active {
+    background-color: darkred !important;
+    color: white;
+    border-color: black !important;
+}

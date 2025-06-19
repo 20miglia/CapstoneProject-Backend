@@ -1,4 +1,4 @@
-.registerButton {
+.bt5 {
     background-color: maroon;
     color: white;
     border-color: black;
@@ -9,30 +9,23 @@
 }
 
 
-.registerButton:hover {
+.bt5:hover {
     background-color: darkred;
     color: white;
     border-color: black;
 }
 
-.registerButton:active {
+.bt5:active {
     background-color: darkred !important;
     color: white;
     border-color: black !important;
 }
 
-.controlForm {
+.ff6 {
     border: solid 2px black;
     border-radius: 20px;
 }
 
-.registerContainer {
-    border: solid 4px maroon;
-    border-radius: 20px;
-    padding-bottom: 14px;
-    padding-top: 10px;
-}
-
-.word{
+.ff7 {
     text-decoration: underline;
 }

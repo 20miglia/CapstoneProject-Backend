@@ -1,0 +1,13 @@
+.weButton {
+    border-radius: 20px;
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom: 4px solid black;
+}
+
+
+
+.cardWelcome {
+    background-color: transparent;
+    border: none;
+}
