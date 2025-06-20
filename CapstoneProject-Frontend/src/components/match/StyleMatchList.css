@@ -49,5 +49,6 @@
 }
 
 .styleItem {
-    border-bottom: solid 3px black;
+    border: solid 3px black;
+    background-color: rgba(128, 128, 128, 0.3);
 }

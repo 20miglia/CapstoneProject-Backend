@@ -30,10 +30,11 @@
 
 
 .pot {
-    background-color: white;
+    
     border-radius: 20px;
     padding-left: 7px;
     border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.6);
 
 }
 
