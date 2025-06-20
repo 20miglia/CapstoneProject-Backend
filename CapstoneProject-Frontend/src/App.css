@@ -1,7 +1,17 @@
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     background: url('https://images.pexels.com/photos/112854/pexels-photo-112854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center center/cover no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
+.firstPoint {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-
+.secondPoint {
+  flex: 1;
+}

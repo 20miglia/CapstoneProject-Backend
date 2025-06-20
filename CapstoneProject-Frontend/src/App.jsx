@@ -31,9 +31,12 @@ function App() {
     <>
     
     <BrowserRouter>
+      
+      <div className='firstPoint'>
+
        <NavBar/>
        
-    
+        <div className='secondPoint'>
     
          <Routes>
            
@@ -49,9 +52,12 @@ function App() {
 
          </Routes>
     
-    
+        </div>
     
        <Footer/>
+    
+    </div>
+
     </BrowserRouter>
     
     

@@ -166,10 +166,10 @@ function Home() {
             </Container>
 
 
-           <Container className='d-flex justify-content-center px-5'>
-                <Row className='mt-5 mx-3 gx-5 gy-5 justify-content-center'>
-                    <Col xs={12} sm={12} md={6} lg={4}>
-                        <Card style={{ width: '18rem' }}>
+           <Container className='d-flex justify-content-center px-5 mb-5'>
+                <Row className='mt-3 mx-3 gx-5 gy-5 justify-content-center'>
+                    <Col xs={12} sm={12} md={6} lg={4} >
+                        <Card style={{width: '18rem' }}>
                             <Card.Img src={Re} />
                             <Accordion className='piece' >
                                 <Accordion.Item eventKey="0">
@@ -184,7 +184,7 @@ function Home() {
 
 
                     <Col xs={12} sm={12} md={6} lg={4}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{width: '18rem' }}>
                             <Card.Img src={Regina} />
                             <Accordion className='piece'>
                                 <Accordion.Item eventKey="0">
@@ -199,7 +199,7 @@ function Home() {
 
 
                     <Col xs={12} sm={12} md={6} lg={4}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{width: '18rem' }}>
                             <Card.Img src={Torre} />
                             <Accordion className='piece'>
                                 <Accordion.Item eventKey="0">
@@ -214,7 +214,7 @@ function Home() {
 
 
                     <Col xs={12} sm={12} md={6} lg={4}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{width: '18rem' }}>
                             <Card.Img src={Alfiere} />
                             <Accordion className='piece'>
                                 <Accordion.Item eventKey="0">
@@ -228,8 +228,8 @@ function Home() {
                     </Col>
 
 
-                    <Col xs={12} sm={12} md={6} lg={4}>
-                        <Card style={{ width: '18rem' }}>
+                    <Col xs={12} sm={12} md={6} lg={4} >
+                        <Card style={{width: '18rem' }}>
                             <Card.Img src={Cavallo} />
                             <Accordion className='piece'>
                                 <Accordion.Item eventKey="0">
@@ -243,8 +243,8 @@ function Home() {
                     </Col>
 
 
-                    <Col xs={12} sm={12} md={6} lg={4}>
-                        <Card style={{ width: '18rem' }}>
+                    <Col xs={12} sm={12} md={6} lg={4} >
+                        <Card style={{width: '18rem' }}>
                             <Card.Img src={Pedone} />
                             <Accordion className='piece'>
                                 <Accordion.Item eventKey="0">
