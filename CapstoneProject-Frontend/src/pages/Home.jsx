@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Container, Accordion, Card, Row, Col, Figure } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './Home.css';
-import scacchiera from '../assets/scacchiera.png'
+import scacchiera from '../assets/Scacchiera.png'
 import Re from '../assets/Re.png'
 import Regina from '../assets/Regina.png'
 import Torre from '../assets/Torre.png'
