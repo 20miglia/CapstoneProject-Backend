@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button} from 'react-bootstrap';
 import api from '../../services/api.jsx';
-import './StyleAddMatch.css'
+import './StyleAddMAtch.css'
 
 
 
