@@ -47,3 +47,7 @@
     color: white;
     border-color: black !important;
 }
+
+.styleItem {
+    border-bottom: solid 3px black;
+}

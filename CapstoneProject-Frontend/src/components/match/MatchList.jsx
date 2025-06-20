@@ -45,7 +45,7 @@ function MatchList() {
 
 
             {listMatch.map((u,i) => (
-                <ListGroup.Item key={i} >
+                <ListGroup.Item key={i} className='styleItem'>
                     <Row className="g-3 align-items-center">
                     <Col xs={12} md={5}>
                         <h5 className='mod'> {u.name}</h5>
